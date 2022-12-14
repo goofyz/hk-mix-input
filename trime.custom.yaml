@@ -1,0 +1,68 @@
+# Trime 自定义
+patch:
+  "style/locale": zh_HK
+  "style/show_preview": true #按鍵提示
+  "style/show_comment": false #顯示提示區
+  "style/key_sound": false
+  "style/keyboards": [.default, letter, cangjie5, number, symbols, mini ] #鍵盤配置：自動鍵盤、字母、數字、符號、精简（供插入实体键盘使用）
+  "style/color_scheme": lost_temple
+  "style/round_corner": 20
+  "style/symbol_text_size": 14
+  "style/label_text_size": 18
+  "preset_keyboards/+":
+    hk_mixed_cangjie5:
+      name: Goofyz
+      ascii_mode: 0
+      width: 10
+      height: 55
+      key_text_offset_y: 2
+      key_symbol_offset_y: 0
+      keys:
+      - {click: '1', long_click: '!'}
+      - {click: '2', long_click: '@'}
+      - {click: '3', long_click: '#'}
+      - {click: '4', long_click: '$'}
+      - {click: '5', long_click: '%'}
+      - {click: '6', long_click: '^'}
+      - {click: '7', long_click: '&'}
+      - {click: '8', long_click: '*'}
+      - {click: '9', long_click: '('}
+      - {click: '0', long_click: ')', swipe_up: paste}
+      - {label: '手', long_click: 'Q', label_symbol: 'Q', click: q} #
+      - {label: '田', long_click: 'W', label_symbol: 'W', click: w}
+      - {label: '水', long_click: 'E', label_symbol: 'E', click: e}
+      - {label: '口', long_click: 'R', label_symbol: 'R', click: r}
+      - {label: '廿', long_click: 'T', label_symbol: 'T', click: t}
+      - {label: '卜', long_click: 'Y', label_symbol: 'Y', click: y}
+      - {label: '山', long_click: 'U', label_symbol: 'U', click: u}
+      - {label: '戈', long_click: 'I', label_symbol: 'I', click: i}
+      - {label: '人', long_click: 'O', label_symbol: 'O', click: o}
+      - {label: '心', long_click: 'P', label_symbol: 'P', click: p}
+      - {width: 5}  #
+      - {label: '日', long_click: 'A', label_symbol: 'A', click: a}
+      - {label: '尸', long_click: 'S', label_symbol: 'S', click: s}
+      - {label: '木', long_click: 'D', label_symbol: 'D', click: d}
+      - {label: '火', long_click: 'F', label_symbol: 'F', click: f}
+      - {label: '土', long_click: 'G', label_symbol: 'G', click: g}
+      - {label: '竹', long_click: 'H', label_symbol: 'H', click: h}
+      - {label: '十', long_click: 'J', label_symbol: 'J', click: j}
+      - {label: '大', long_click: 'K', label_symbol: 'K', click: k}
+      - {label: '中', long_click: 'L', label_symbol: 'L', click: l}
+      - {width: 5}  #
+      - {click: Shift_L, send_bindings: false, width: 15}
+      - {label: 'Z', long_click: 'Z', label_symbol: 'Z', click: z}
+      - {label: '難', long_click: 'X', label_symbol: 'X', click: x}
+      - {label: '金', long_click: 'C', label_symbol: 'C', click: c}
+      - {label: '女', long_click: 'V', label_symbol: 'V', click: v}
+      - {label: '月', long_click: 'B', label_symbol: 'B', click: b}
+      - {label: '弓', long_click: 'N', label_symbol: 'N', click: n}
+      - {label: '一', long_click: 'M', label_symbol: 'M', click: m}
+      - {click: BackSpace, long_click: Clear, width: 15}
+      - {click: Keyboard_symbols, long_click: Keyboard_number} #
+      - {click: Mode_switch, long_click: Menu}
+      - {long_click: 'liquid_keyboard_emoji', click: ','}
+      - {click: space, label: '倉', width: 20, symbol_text_size: 10}
+      - {label: "__", composing: "{Return}{space}", long_click: VOICE_ASSIST, click: space, width: 25, key_back_color: key_back_color}
+      - {click: '.', long_click: IME_switch}
+      - {click: Return, composing: Return1, long_click: CommitComment, width: 15}
+...

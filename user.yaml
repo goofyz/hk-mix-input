@@ -1,0 +1,18 @@
+var:
+  last_build_time: 1671001833
+  option:
+    ascii_punct: false
+    extended_charset: false
+    full_shape: false
+    simplification: false
+  previously_selected_schema: cangjie5_tc
+  schema_access_time:
+    cangjie5: 1670317963
+    cangjie5_express: 1670310893
+    cangjie5_tc: 1670983881
+    clover: 1670317399
+    clover_jiugong: 1650852306
+    double_pinyin_flypy: 1670288017
+    flypy: 1651231960
+    luna_pinyin: 1650261754
+    stroke: 1670317956

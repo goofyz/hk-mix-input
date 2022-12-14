@@ -1,0 +1,10 @@
+customization:
+  distribution_code_name: ""
+  distribution_version: ""
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Wed Dec 14 14:57:16 2022"
+  rime_version: 1.7.3
+patch:
+  schema_list:
+    - {schema: cangjie5_ryan}
+    - {schema: cangjie5_tc}
