@@ -14,7 +14,7 @@
 
 # 修改 Tips
 
-* 基本上只需要改  `trime.custom.yaml` 和 `cangjie5_tc.custom.yaml`
+* 基本上只需要改  `trime.custom.yaml` 和 `hk_mixed_cangjie5.custom.yaml`
 * 請參考 [Trime Wiki](https://github.com/osfans/trime/wiki/trime.yaml) 和
 * 修改 `trime.custom.yaml` 後，記得到「同文輸入法」>「主題與配色」>「主題」>  「Trime」> 「確定」一次，以 apply 你的修改。
 * 修改 `cangjie5_tc.custom.yaml` (輸入法)後，要按「部署」。
