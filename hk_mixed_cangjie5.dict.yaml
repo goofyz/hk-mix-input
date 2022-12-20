@@ -28,12 +28,22 @@ encoder:
     - '^x.*$'
     - '^z.*$'
   rules:
+    - length_equal: 1
+      formula: "AaAbAcAyAz"
     - length_equal: 2
-      formula: "AaAzBaBbBz"
+      formula: "AaAbAcAyAzBaBbBcByBz"
     - length_equal: 3
-      formula: "AaAzBaBzCz"
-    - length_in_range: [4, 10]
-      formula: "AaBzCaYzZz"
+      formula: "AaAbAcAyAzBaBbBcByBzZaZbZcZyZz"
+    - length_equal: 4
+      formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzZaZbZcZyZz"
+    - length_equal: 5
+      formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzYaYbYcYyYzZaZbZcZyZz"
+    - length_equal: 6
+      formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzDaDbDcDyDzYaYbYcYyYzZaZbZcZyZz"
+    - length_equal: 7
+      formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzDaDbDcDyDzEaEbEcEyEzYaYbYcYyYzZaZbZcZyZz"
+    - length_equal: 8
+      formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzDaDbDcDyDzEaEbEcEyEzFaFbFcFyFzYaYbYcYyYzZaZbZcZyZz"
 import_tables:
   - cangjie5_tc
 ...
