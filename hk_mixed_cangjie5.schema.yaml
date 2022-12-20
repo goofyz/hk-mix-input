@@ -24,8 +24,6 @@ switches:
     states: [ 中文, 英文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: simplification
-    states: [ 漢字, 汉字 ]
   - name: extended_charset
     states: [ 常用, 增廣 ]
   - name: ascii_punct
@@ -54,7 +52,6 @@ engine:
   filters:
     - simplifier
     - uniquifier
-    - single_char_filter
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
