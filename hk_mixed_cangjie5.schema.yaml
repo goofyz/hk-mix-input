@@ -62,7 +62,7 @@ speller:
   #max_code_length: 5  # 五碼頂字上屏
 
 translator:
-  dictionary: cangjie5_tc
+  dictionary: hk_mixed_cangjie5
   enable_charset_filter: true
   enable_sentence: true
   enable_encoder: true
