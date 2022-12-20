@@ -57,7 +57,7 @@ patch:
       - {label: '月', long_click: 'B', label_symbol: 'B', click: b}
       - {label: '弓', long_click: 'N', label_symbol: 'N', click: n}
       - {label: '一', long_click: 'M', label_symbol: 'M', click: m}
-      - {click: BackSpace, long_click: Clear, width: 15}
+      - {click: BackSpace, width: 15}
       - {click: Keyboard_symbols, long_click: Keyboard_number} #
       - {click: Mode_switch, long_click: Menu}
       - {long_click: 'liquid_keyboard_emoji', click: ','}
