@@ -16,7 +16,7 @@ schema:
     港式中英混合輸入(倉頡)
     網址：https://github.com/goofyz/hk-mix-input
   dependencies:
-    - luna_quanpin
+    - easy_en
 
 switches:
   - name: ascii_mode
@@ -47,16 +47,28 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - reverse_lookup_translator
     - table_translator
+    - table_translator@easy_en
   filters:
     - simplifier
     - uniquifier
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " ;"
   #max_code_length: 5  # 五碼頂字上屏
+
+easy_en:
+  dictionary: easy_en
+  spelling_hints: 9
+  enable_completion: true
+  enable_sentence: true
+  initial_quality: -1
+  preedit_format:
+    - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
+    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
+  comment_format:
+    - xform/^.+$//
 
 translator:
   dictionary: hk_mixed_cangjie5
@@ -78,18 +90,6 @@ abc_segmentor:
   extra_tags:
 #    - reverse_lookup  # 與拼音（反查碼）混打
 
-reverse_lookup:
-  dictionary: luna_pinyin
-  prism: luna_quanpin
-  prefix: "`"
-  suffix: "'"
-  tips: 〔拼音〕
-  preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
-  comment_format:
-    - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
 
 simplifier:
   tips: all  # 簡化字模式下提示對應的傳統漢字
@@ -105,3 +105,4 @@ recognizer:
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
     reverse_lookup: "`[a-z]*'?$|[a-z]*'$"
+    uppercase: ''
