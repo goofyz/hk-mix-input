@@ -11,7 +11,7 @@ schema:
   name: 中英混合倉頡
   version: "2022.12.14"
   author:
-    - 發明人 朱邦復先生
+    - 倉頡發明人 朱邦復先生
   description: |
     港式中英混合輸入(倉頡)
     網址：https://github.com/goofyz/hk-mix-input
@@ -80,6 +80,7 @@ translator:
   enable_sentence: true
   enable_encoder: true
   encode_commit_history: true
+  enable_user_dict: true
   max_phrase_length: 5
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
