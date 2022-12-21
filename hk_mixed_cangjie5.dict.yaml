@@ -1,5 +1,16 @@
 # encoding: utf-8
 #
+#
+# ---------------------------------------
+# https://github.com/qingchen239/RimeCangjieInputConfiguration/blob/master/data/cangjie5.dict.yaml
+# encoder\rules: 在這裡，我們規定在輸入詞語時的拆字規則。
+# 在最初的版本裡，輸入一個二字的詞語需要輸入第一字的首碼、第一字的尾碼、第二次的首碼、第二次的次首碼和第二次的尾碼。
+# 比方說，輸入「陳清」一詞，我們需要輸按下「弓田水手月」。這並不符合我們大多數人的輸入習慣。
+# 所以我更改了詞語的拆字規則。現在我們在輸入一個詞時，要按下這個詞中所有字的所有碼。
+# 比方說，現在輸入「陳清」一詞，需要按下「弓中木田水手一月」。
+#
+# ---------------------------------------
+#
 # 基於「倉頡五代補完計劃」：
 # https://github.com/Jackchows/Cangjie5
 # 使用前務必閱讀：
@@ -46,4 +57,6 @@ encoder:
       formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzDaDbDcDyDzEaEbEcEyEzFaFbFcFyFzYaYbYcYyYzZaZbZcZyZz"
 import_tables:
   - cangjie5_tc
+  - jyut6ping3.phrase
+  - jyut6ping3.maps
 ...
