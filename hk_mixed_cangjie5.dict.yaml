@@ -59,4 +59,7 @@ import_tables:
   - cangjie5_tc
   - jyut6ping3.phrase
   - jyut6ping3.maps
+  - jyut6ping3.words
+  - jyut6ping3.lettered
+  - hk_mixed_input.custom
 ...
