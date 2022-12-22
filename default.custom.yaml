@@ -2,9 +2,18 @@ customization:
   distribution_code_name: ""
   distribution_version: ""
   generator: "Rime::SwitcherSettings"
-  modified_time: "Wed Dec 14 14:57:16 2022"
+  modified_time: "Wed Dec 14 17:14:25 2022"
   rime_version: 1.7.3
 patch:
   schema_list:
-    - {schema: cangjie5_ryan}
-    - {schema: cangjie5_tc}
+    - {schema: hk_mixed_cangjie5}
+  menu:
+    page_size: 20
+    ascii_composer/switch_key:
+      Caps_Lock: commit_code
+      Shift_L: commit_code
+      Shift_R: commit_code
+      Control_L: noop
+      Control_R: noop
+      Caps_Lock: commit_code
+      Eisu_toggle: clear
