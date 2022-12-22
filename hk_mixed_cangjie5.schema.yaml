@@ -24,8 +24,10 @@ switches:
     states: [ 中文, 英文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: extended_charset
-    states: [ 常用, 增廣 ]
+#  - name: simplification
+#    states: [ 漢字, 汉字 ]
+#  - name: extended_charset
+#    states: [ 常用, 增廣 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
   - name: emoji_suggestion
