@@ -66,7 +66,7 @@ easy_en:
   dictionary: easy_en
   spelling_hints: 9
   enable_completion: true
-  enable_sentence: true
+  enable_sentence: false
   initial_quality: -1
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
