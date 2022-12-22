@@ -81,7 +81,7 @@ translator:
   enable_encoder: true
   encode_commit_history: true
   enable_user_dict: true
-  max_phrase_length: 5
+  max_phrase_length: 8
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
     - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
