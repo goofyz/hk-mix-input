@@ -1,13 +1,11 @@
 # Trime 自定义
 patch:
   "style/locale": zh_HK
-  "style/show_preview": true #按鍵提示
-  "style/key_sound": false
-  "style/keyboards": [.default, letter, cangjie5, number, symbols, mini ] #鍵盤配置：自動鍵盤、字母、數字、符號、精简（供插入实体键盘使用）
+  "style/keyboards": [.default, letter, hk_mixed_cangjie5, number, symbols, mini ] #鍵盤配置：自動鍵盤、字母、數字、符號、精简（供插入实体键盘使用）
   "style/color_scheme": lost_temple
   "style/round_corner": 8
-  "style/symbol_text_size": 12
-  "style/label_text_size": 18
+  "style/symbol_text_size": 15
+  "style/key_text_size": 15
   "style/text_size": 18
   "style/layout/border": 0
   "style/layout/min_length": 10
@@ -20,11 +18,7 @@ patch:
   "style/layout/round_corner": 0
   "style/layout/elevation": 0
   "style/window/@0": {start: "", move: ' ', end: ""}
-  "style/liquid_keyboard_window": #液态键盘模式下显示的悬浮窗口組件
-    - {start: "", click: "space", label: " 空格 "}
-    - {start: "", click: "BackSpace", label: " 删除 "}
-    - {start: "", click: "Return", label: " 輸入 "}
-    - {start: "", click: "liquid_keyboard_exit", label: " 返回 "}
+  "style/liquid_keyboard_window": []
   "liquid_keyboard/row": 6
   "liquid_keyboard/single_width": 50
   "liquid_keyboard/candidate/name": "候選"
@@ -102,7 +96,6 @@ patch:
     - table
     - symbol
     - unit
-    - new
     - grease
     - rusa
     - lation
@@ -113,13 +106,14 @@ patch:
   "preset_keys/liquid_keyboard_emoji": { label: 😀, send: function, command: liquid_keyboard, option: "😀" }
   "preset_keyboards/+":
     hk_mixed_cangjie5:
-      name: Goofyz
+      name: 中英混合鍵盤
+      author: Goofyz
       ascii_mode: 0
       width: 10
       height: 55
       key_text_offset_y: 2
-      key_symbol_offset_y: 0
-      key_symbol_offset_x: 3
+      key_symbol_offset_y: 1
+      key_symbol_offset_x: 0
       keys:
       - {click: '1', long_click: '!'}
       - {click: '2', long_click: '@'}
@@ -152,7 +146,7 @@ patch:
       - {label: '大', long_click: 'K', label_symbol: 'K', click: k}
       - {label: '中', long_click: 'L', label_symbol: 'L', click: l}
       - {width: 5}  #
-      - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1}
+      - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1, key_text_size: 18}
       - {label: 'Z', long_click: 'Z', label_symbol: 'Z', click: z}
       - {label: '難', long_click: 'X', label_symbol: 'X', click: x}
       - {label: '金', long_click: 'C', label_symbol: 'C', click: c}
@@ -160,11 +154,11 @@ patch:
       - {label: '月', long_click: 'B', label_symbol: 'B', click: b}
       - {label: '弓', long_click: 'N', label_symbol: 'N', click: n}
       - {label: '一', long_click: 'M', label_symbol: 'M', click: m}
-      - {label: '⌫', click: BackSpace, width: 15, key_text_offset_y: -1}
-      - {long_click: Keyboard_number, click: Keyboard_symbols, key_symbol_offset_x: 0, width: 15} #
-      - {long_click: 'liquid_keyboard_emoji', click: ',', key_symbol_offset_x: 0}
-      - {label: '中', long_click: 'liquid_keyboard_candidate', click: space, width: 25, key_text_size: 18, key_symbol_offset_x: 0}
-      - {label: "英", long_click: VOICE_ASSIST, click: space, composing: "{Return}{space}", width: 25, key_text_size: 18, key_symbol_offset_x: 0}
-      - {long_click: IME_switch, click: '.', key_symbol_offset_x: 0}
-      - {long_click: Menu, click: Return, composing: Return1, width: 15, , key_symbol_offset_x: 0}
+      - {label: '⌫', click: BackSpace, width: 15, key_text_offset_y: -1, key_text_size: 18}
+      - {long_click: Keyboard_number, click: Keyboard_symbols, , width: 15, symbol_text_size: 12} #
+      - {long_click: 'liquid_keyboard_emoji', click: ',', symbol_text_size: 12}
+      - {label: '中', long_click: 'liquid_keyboard_candidate', click: space, width: 25, symbol_text_size: 12}
+      - {label: '英', long_click: VOICE_ASSIST, click: space, has_menu: "{Return}{space}", width: 25, , symbol_text_size: 12}
+      - {long_click: IME_switch, click: '.', symbol_text_size: 12}
+      - {long_click: Menu, click: Return, composing: Return1, width: 15, symbol_text_size: 12}
 ...
