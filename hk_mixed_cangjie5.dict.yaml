@@ -9,31 +9,13 @@
 # 所以我更改了詞語的拆字規則。現在我們在輸入一個詞時，要按下這個詞中所有字的所有碼。
 # 比方說，現在輸入「陳清」一詞，需要按下「弓中木田水手一月」。
 #
-# ---------------------------------------
-#
-# 基於「倉頡五代補完計劃」：
-# https://github.com/Jackchows/Cangjie5
-# 使用前務必閱讀：
-# https://github.com/Jackchows/Cangjie5/blob/master/README.md 及
-# https://github.com/Jackchows/Cangjie5/blob/master/change_summary.md
-# 
-# 相關項目：倉頡三代補完計畫
-# 專案網址：https://github.com/Arthurmcarthur/Cangjie3-Plus
-#
-# 傳統漢字優先，
-# 《常用國字標準字體表》、《次常用國字標準字體表》和《常用字字形表》中的字將排在前面，
-# 甚至排在一些常用的簡化字之前。
+
 ---
 name: hk_mixed_cangjie5
 version: "2022.12.20"
 sort: original
 use_preset_vocabulary: true
 max_phrase_length: 8
-min_phrase_weight: 0
-columns:
-  - text
-  - code
-  - stem
 encoder:
   exclude_patterns:
     - '^x.*$'
@@ -56,10 +38,10 @@ encoder:
     - length_equal: 8
       formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzDaDbDcDyDzEaEbEcEyEzFaFbFcFyFzYaYbYcYyYzZaZbZcZyZz"
 import_tables:
-  - cangjie5_tc
+  - cangjie5
+  - hk_mixed_input.custom
   - jyut6ping3.phrase
   - jyut6ping3.maps
   - jyut6ping3.words
   - jyut6ping3.lettered
-  - hk_mixed_input.custom
 ...
