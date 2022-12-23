@@ -119,7 +119,7 @@ patch:
       height: 55
       key_text_offset_y: 2
       key_symbol_offset_y: 0
-      key_symbol_offset_x: 5
+      key_symbol_offset_x: 3
       keys:
       - {click: '1', long_click: '!'}
       - {click: '2', long_click: '@'}
@@ -166,5 +166,5 @@ patch:
       - {label: '中', long_click: 'liquid_keyboard_candidate', click: space, width: 25, key_text_size: 18, key_symbol_offset_x: 0}
       - {label: "英", long_click: VOICE_ASSIST, click: space, composing: "{Return}{space}", width: 25, key_text_size: 18, key_symbol_offset_x: 0}
       - {long_click: IME_switch, click: '.', key_symbol_offset_x: 0}
-      - {long_click: Mode_switch, click: Return, composing: Return1, width: 15, , key_symbol_offset_x: 0}
+      - {long_click: Menu, click: Return, composing: Return1, width: 15, , key_symbol_offset_x: 0}
 ...
