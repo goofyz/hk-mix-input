@@ -106,6 +106,7 @@ patch:
   "preset_keys/liquid_keyboard_emoji": { label: 😀, send: function, command: liquid_keyboard, option: "😀" }
   "preset_keys/BackSpace": {label: '⌫', repeatable: true, send: BackSpace}
   "preset_keys/space": {label: '　', repeatable: false, functional: false, send: space}
+  "preset_keys/Shift_L": {label: '⇧', send: Shift_L, shift_lock: ascii_long}
   "preset_keyboards/number":
     name: 數字
     author: "Goofyz"
@@ -188,7 +189,7 @@ patch:
       - {long_click: Keyboard_number, click: Keyboard_symbols, , width: 15, symbol_text_size: 12} #
       - {long_click: 'liquid_keyboard_emoji', click: ',', symbol_text_size: 12}
       - {label: '中', long_click: 'liquid_keyboard_candidate', click: space, width: 25, symbol_text_size: 12}
-      - {label: '英', long_click: VOICE_ASSIST, click: space, has_menu: "{Return}{space}", width: 25, , symbol_text_size: 12}
+      - {label: '英', long_click: VOICE_ASSIST, click: space, has_menu: "{Return}{space}", width: 25, symbol_text_size: 12}
       - {long_click: IME_switch, click: '.', symbol_text_size: 12}
       - {long_click: Menu, click: Return, composing: Return1, width: 15, symbol_text_size: 12}
 ...
