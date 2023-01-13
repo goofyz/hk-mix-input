@@ -32,7 +32,7 @@ switches:
     states: [ 。，, ．， ]
   - name: emoji_suggestion
     reset: 1
-    states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+    states: [ "🈚️️\uFE0E", "😃️\uFE0F" ]
 
 engine:
   processors:
