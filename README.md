@@ -5,8 +5,8 @@
 
 # TODO 
 
-- [ ] Fix Emoji
-- [ ] 速成 （可成功，不過候選詞次序有問題）
+- [ ] Fix Emoji Keyboard
+- [X] 速成 （可成功，不過候選詞次序有問題）
 - [ ] 英文反查
 
 # 安裝步驟
@@ -24,21 +24,22 @@ PS2: 建議安裝 apk 後先開啟「同文輸入法」作設定。如未做第�
 
 # 修改 Tips
 
-* 基本上只需要改  `trime.custom.yaml` 和 `hk_mixed_cangjie5.custom.yaml`
-* 請參考 [Trime Wiki](https://github.com/osfans/trime/wiki/trime.yaml) 和 [Rime Customization Guide](https://github.com/rime/home/wiki/CustomizationGuide)
-* 修改 `trime.custom.yaml` 後，記得到「同文輸入法」>「主題與配色」>「主題」>  「Trime」> 「確定」一次，以 apply 你的修改。
-* 修改 `hk_mixed_cangjie5.custom.yaml` (輸入法)後，要按「部署」。
-* 如果修改好似無反應，請到 `/rime/build` 下查看有沒有你新的改動。
-* 有新詞語可新增到 `hk_mixed_input.custom.dict.yaml` ，注意字語和字碼之間是 tab 非 space。
+- 基本上只需要改  `trime.custom.yaml` 和 `hk_mixed_cangjie5.custom.yaml`
+- 請參考 [Trime Wiki](https://github.com/osfans/trime/wiki/trime.yaml) 和 [Rime Customization Guide](https://github.com/rime/home/wiki/CustomizationGuide)
+- 修改 `trime.custom.yaml` 後，記得到「同文輸入法」>「主題與配色」>「主題」>  「Trime」> 「確定」一次，以 apply 你的修改。
+- 修改 `hk_mixed_cangjie5.custom.yaml` (輸入法)後，要按「部署」。
+- 如果修改好似無反應，請到 `/rime/build` 下查看有沒有你新的改動。
+- 有新詞語可新增到 `hk_mixed_input.custom.dict.yaml` ，注意字語和字碼之間是 tab 非 space。
 
 # 常見問題
 
-* 「語音輸入」出現「沒有權限」的話，請自行到 Android (設定 -> 應用程式)給予相關權限。
-* 自定義詞庫中的，字詞與字碼中間必須為 tab (\t)，space 是沒有反應的。
+- 「語音輸入」出現「沒有權限」的話，請自行到 Android (設定 -> 應用程式)給予相關權限。
+- 自定義詞庫中的，字詞與字碼中間必須為 tab (\t)，space 是沒有反應的。
+- 如有問題可整個 `/rime/build` 刪除再重做一次。
 
 # 鳴謝
 
-* 項目：[RIME], [TRIME], [倉頡五代補完計劃], [如何優雅地在小狼毫使用倉頡輸入法], [RIME-Cantonese]
+- 項目：[RIME], [TRIME], [倉頡五代補完計劃], [如何優雅地在小狼毫使用倉頡輸入法], [RIME-Cantonese]
 
 [RIME]: http://rime.im
 [TRIME]: https://github.com/osfans/trime
