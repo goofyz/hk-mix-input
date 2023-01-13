@@ -1,0 +1,119 @@
+# 本 schema 由 "倉頡五代補完計畫" copy 出來的。
+# ----------------------------------------------
+# 倉頡五代補完計畫
+# 專案網址：https://github.com/Jackchows/Cangjie5
+# 原碼表為「倉頡之友·馬來西亞」發佈的「倉頡平台2012」軟件所含「五倉世紀」碼表
+# 網址：www.chinesecj.com
+#
+
+schema:
+  schema_id: hk_mixed_quick
+  name: 中英混合速成
+  version: "2022.12.14"
+  author:
+    - Goofyz
+  description: |
+    港式中英混合輸入(速成)
+    網址：https://github.com/goofyz/hk-mix-input
+  dependencies:
+    - easy_en
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 速成, 英文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+#  - name: simplification
+#    states: [ 漢字, 汉字 ]
+#  - name: extended_charset
+#    states: [ 常用, 增廣 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+  - name: emoji_suggestion
+    reset: 1
+    states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+    - table_translator@easy_en
+  filters:
+    - simplifier@emoji_suggestion
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  delimiter: " ;"
+  #max_code_length: 5  # 五碼頂字上屏
+
+easy_en:
+  dictionary: easy_en
+  spelling_hints: 9
+  enable_completion: true
+  enable_sentence: false
+  initial_quality: -1
+  preedit_format:
+    - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
+    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
+  comment_format:
+    - xform/^.+$//
+
+translator:
+  dictionary: hk_mixed_quick
+  enable_charset_filter: true
+  enable_sentence: true
+  enable_encoder: true
+  encode_commit_history: true
+  enable_user_dict: true
+  max_phrase_length: 8
+  preedit_format:
+    - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
+    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
+  comment_format:
+    - "xlit|abcdefghijklmnopqrstuvwxyz~|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片～|"
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+    - "^yyy.*$"
+
+abc_segmentor:
+  extra_tags:
+#    - reverse_lookup  # 與拼音（反查碼）混打
+
+emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: all
+
+simplifier:
+  tips: all  # 簡化字模式下提示對應的傳統漢字
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[a-z]+)$"
+    reverse_lookup: "`[a-z]*'?$|[a-z]*'$"
+    uppercase: ''

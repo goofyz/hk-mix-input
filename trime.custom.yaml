@@ -1,7 +1,7 @@
 # Trime 自定义
 patch:
   "style/locale": zh_HK
-  "style/keyboards": [.default, letter, hk_mixed_cangjie5, number, symbols, mini ] #鍵盤配置：自動鍵盤、字母、數字、符號、精简（供插入实体键盘使用）
+  "style/keyboards": [.default, letter, number, symbols, mini ] #鍵盤配置：自動鍵盤、字母、數字、符號、精简（供插入实体键盘使用）
   "style/color_scheme": lost_temple
   "style/round_corner": 8
   "style/symbol_text_size": 15
@@ -192,4 +192,5 @@ patch:
       - {label: '英', long_click: VOICE_ASSIST, click: space, has_menu: "{Return}{space}", width: 25, symbol_text_size: 12}
       - {long_click: IME_switch, click: '.', symbol_text_size: 12}
       - {long_click: Menu, click: Return, composing: Return1, width: 15, symbol_text_size: 12}
+  "preset_keyboards/hk_mixed_quick/import_preset": hk_mixed_cangjie5
 ...
