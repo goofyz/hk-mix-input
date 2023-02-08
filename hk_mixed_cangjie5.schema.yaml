@@ -58,6 +58,7 @@ engine:
     - simplifier@emoji_suggestion
     - simplifier
     - uniquifier
+    - single_char_filter
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
