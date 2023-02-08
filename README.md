@@ -11,10 +11,10 @@
 
 # 安裝步驟
 
-1. 安裝 [Trime 3.2.8](https://github.com/osfans/trime/releases) (新的應該也可以，未試)
+1. 安裝 [Trime 3.2.8](https://github.com/osfans/trime/releases) (~~新的應該也可以~~，未試)
 2. 開啟「同文輸入法」，允許所有權限
 3. 到「同文輸入法」 > 「鍵盤設定」> 「嵌入式編輯模式」> 揀 「輸入碼」，這樣打字時 default 會出英文。
-3. 下載此 repo 中的所有檔安，Copy 到 `內置儲存空間/rime` 入面。
+3. 下載此 repo 中的[所有檔案](https://github.com/goofyz/hk-mix-input/archive/refs/heads/main.zip)，Copy 到 `內置儲存空間/rime` 入面。
 3. 到「同文輸入法」 > 「主題與配色」 > 「主題」 > 「Trime」> 「確定」一次
 3. 到「同文輸入法」 > 「方案」 > 揀 "hk_mixed_cangjie5/hk_mixed_quick" (會 load 好耐好耐 (5 分鐘或以上))
 3. 按「部署」
