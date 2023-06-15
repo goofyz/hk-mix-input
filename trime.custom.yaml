@@ -156,41 +156,41 @@ patch:
       - {click: '8', long_click: '*'}
       - {click: '9', long_click: '('}
       - {click: '0', long_click: ')', swipe_up: paste}
-      - {label: '手', long_click: 'Q', label_symbol: 'Q', click: q} #
-      - {label: '田', long_click: 'W', label_symbol: 'W', click: w}
-      - {label: '水', long_click: 'E', label_symbol: 'E', click: e}
-      - {label: '口', long_click: 'R', label_symbol: 'R', click: r}
-      - {label: '廿', long_click: 'T', label_symbol: 'T', click: t}
-      - {label: '卜', long_click: 'Y', label_symbol: 'Y', click: y}
-      - {label: '山', long_click: 'U', label_symbol: 'U', click: u}
-      - {label: '戈', long_click: 'I', label_symbol: 'I', click: i}
-      - {label: '人', long_click: 'O', label_symbol: 'O', click: o}
-      - {label: '心', long_click: 'P', label_symbol: 'P', click: p}
+      - {label: '手', click: 'q', long_click: 'Q', label_symbol: 'Q'}  #
+      - {label: "田", click: 'w', long_click: 'W', label_symbol: 'W'} 
+      - {label: '水', click: 'e', long_click: 'E', label_symbol: 'E'} 
+      - {label: '口', click: 'r', long_click: 'R', label_symbol: 'R'} 
+      - {label: '廿', click: 't', long_click: 'T', label_symbol: 'T'} 
+      - {label: '卜', click: 'y', long_click: 'Y', label_symbol: 'Y'} 
+      - {label: '山', click: 'u', long_click: 'U', label_symbol: 'U'} 
+      - {label: '戈', click: 'i', long_click: 'I', label_symbol: 'I'} 
+      - {label: '人', click: 'o', long_click: 'O', label_symbol: 'O'} 
+      - {label: '心', click: 'p', long_click: 'P', label_symbol: 'P'} 
       - {width: 5}  #
-      - {label: '日', long_click: 'A', label_symbol: 'A', click: a}
-      - {label: '尸', long_click: 'S', label_symbol: 'S', click: s}
-      - {label: '木', long_click: 'D', label_symbol: 'D', click: d}
-      - {label: '火', long_click: 'F', label_symbol: 'F', click: f}
-      - {label: '土', long_click: 'G', label_symbol: 'G', click: g}
-      - {label: '竹', long_click: 'H', label_symbol: 'H', click: h}
-      - {label: '十', long_click: 'J', label_symbol: 'J', click: j}
-      - {label: '大', long_click: 'K', label_symbol: 'K', click: k}
-      - {label: '中', long_click: 'L', label_symbol: 'L', click: l}
+      - {label: '日', click: 'a', long_click: 'A', label_symbol: 'A'} 
+      - {label: '尸', click: 's', long_click: 'S', label_symbol: 'S'} 
+      - {label: '木', click: 'd', long_click: 'D', label_symbol: 'D'} 
+      - {label: '火', click: 'f', long_click: 'F', label_symbol: 'F'} 
+      - {label: '土', click: 'g', long_click: 'G', label_symbol: 'G'} 
+      - {label: '竹', click: 'h', long_click: 'H', label_symbol: 'H'} 
+      - {label: '十', click: 'j', long_click: 'J', label_symbol: 'J'} 
+      - {label: '大', click: 'k', long_click: 'K', label_symbol: 'K'} 
+      - {label: '中', click: 'l', long_click: 'L', label_symbol: 'L'} 
       - {width: 5}  #
-      - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1, key_text_size: 18}
+      - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1, key_text_size: 18, key_back_color: 0x555a676e}
       - {label: 'Z', long_click: 'Z', label_symbol: 'Z', click: z}
-      - {label: '難', long_click: 'X', label_symbol: 'X', click: x}
-      - {label: '金', long_click: 'C', label_symbol: 'C', click: c}
-      - {label: '女', long_click: 'V', label_symbol: 'V', click: v}
-      - {label: '月', long_click: 'B', label_symbol: 'B', click: b}
-      - {label: '弓', long_click: 'N', label_symbol: 'N', click: n}
-      - {label: '一', long_click: 'M', label_symbol: 'M', click: m}
-      - {label: '⌫', click: BackSpace, width: 15, key_text_offset_y: -1, key_text_size: 18}
-      - {long_click: Keyboard_number, click: Keyboard_symbols, , width: 15, symbol_text_size: 12} #
-      - {long_click: 'liquid_keyboard_emoji', click: ',', symbol_text_size: 12}
+      - {label: '難', click: 'x', long_click: 'X', label_symbol: 'X'} 
+      - {label: '金', click: 'c', long_click: 'C', label_symbol: 'C'} 
+      - {label: '女', click: 'v', long_click: 'V', label_symbol: 'V'} 
+      - {label: '月', click: 'b', long_click: 'B', label_symbol: 'B'} 
+      - {label: '弓', click: 'n', long_click: 'N', label_symbol: 'N'} 
+      - {label: '一', click: 'm', long_click: 'M', label_symbol: 'M'} 
+      - {label: '⌫', click: BackSpace, width: 15, key_text_offset_y: -1, key_text_size: 18, key_back_color: 0x555a676e}
+      - {long_click: Keyboard_number, click: Keyboard_symbols, , width: 15, symbol_text_size: 12, key_back_color: 0x855a676e} #
+      - {long_click: 'liquid_keyboard_emoji', click: ',', symbol_text_size: 12, key_back_color: 0x555a676e}
       - {label: '中', long_click: 'liquid_keyboard_candidate', click: space, width: 25, symbol_text_size: 12}
       - {label: '英', long_click: VOICE_ASSIST, click: space, has_menu: "{Return}{space}", width: 25, symbol_text_size: 12}
-      - {long_click: IME_switch, click: '.', symbol_text_size: 12}
-      - {long_click: Menu, click: Return, composing: Return1, width: 15, symbol_text_size: 12}
+      - {long_click: IME_switch, click: '.', symbol_text_size: 12, key_back_color: 0x555a676e}
+      - {long_click: Menu, click: Return, composing: Return1, width: 15, symbol_text_size: 12, key_back_color: 0x855a676e}
   "preset_keyboards/hk_mixed_quick/import_preset": hk_mixed_cangjie5
 ...
