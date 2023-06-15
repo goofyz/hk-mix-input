@@ -39,6 +39,7 @@ encoder:
       formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzDaDbDcDyDzEaEbEcEyEzFaFbFcFyFzYaYbYcYyYzZaZbZcZyZz"
 import_tables:
   - cangjie5
+  - cangjie5.cj3ext
   - hk_mixed_input.custom
   - jyut6ping3.phrase
   - jyut6ping3.maps
