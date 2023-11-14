@@ -107,6 +107,8 @@ patch:
   "preset_keys/BackSpace": {label: '⌫', repeatable: true, send: BackSpace}
   "preset_keys/space": {label: '　', repeatable: false, functional: false, send: space}
   "preset_keys/Shift_L": {label: '⇧', send: Shift_L, shift_lock: ascii_long}
+  "preset_keys/Page_Up": {label: ◀, send: Page_Up}
+  "preset_keys/Page_Down": {label: ▶, send: Page_Down, long_click: ''}
   "preset_keyboards/number":
     name: 數字
     author: "Goofyz"
@@ -147,15 +149,15 @@ patch:
       key_symbol_offset_x: 0
       keys:
       - {click: '1', long_click: '!'}
-      - {click: '2', long_click: '@'}
-      - {click: '3', long_click: '#'}
-      - {click: '4', long_click: '$'}
-      - {click: '5', long_click: '%'}
-      - {click: '6', long_click: '^'}
-      - {click: '7', long_click: '&'}
+      - {click: '2', long_click: '@', has_menu: "{Return}@"}
+      - {click: '3', long_click: '#', has_menu: Left}
+      - {click: '4', long_click: '$', has_menu: Right}
+      - {label: '5', click: "5", has_menu: "{space}5", long_click: '%'}
+      - {click: '6', long_click: '^', has_menu: Home}
+      - {click: '7', long_click: '&', has_menu: End}
       - {click: '8', long_click: '*'}
       - {click: '9', long_click: '('}
-      - {click: '0', long_click: ')', swipe_up: paste}
+      - {click: '0', long_click: ')', has_menu: Page_Down}
       - {label: '手', click: 'q', long_click: 'Q', label_symbol: 'Q'}  #
       - {label: "田", click: 'w', long_click: 'W', label_symbol: 'W'} 
       - {label: '水', click: 'e', long_click: 'E', label_symbol: 'E'} 
@@ -165,7 +167,7 @@ patch:
       - {label: '山', click: 'u', long_click: 'U', label_symbol: 'U'} 
       - {label: '戈', click: 'i', long_click: 'I', label_symbol: 'I'} 
       - {label: '人', click: 'o', long_click: 'O', label_symbol: 'O'} 
-      - {label: '心', click: 'p', long_click: 'P', label_symbol: 'P'} 
+      - {label: '心', click: 'p', long_click: 'P', label_symbol: 'P', swipe_up: paste} 
       - {width: 5}  #
       - {label: '日', click: 'a', long_click: 'A', label_symbol: 'A'} 
       - {label: '尸', click: 's', long_click: 'S', label_symbol: 'S'} 
@@ -176,7 +178,7 @@ patch:
       - {label: '十', click: 'j', long_click: 'J', label_symbol: 'J'} 
       - {label: '大', click: 'k', long_click: 'K', label_symbol: 'K'} 
       - {label: '中', click: 'l', long_click: 'L', label_symbol: 'L'} 
-      - {width: 5}  #
+      - {width: 5, click: '/', key_back_color: 0x555a676e}  #
       - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1, key_text_size: 18, key_back_color: 0x555a676e}
       - {label: 'Z', long_click: 'Z', label_symbol: 'Z', click: z}
       - {label: '難', click: 'x', long_click: 'X', label_symbol: 'X'} 
@@ -185,7 +187,7 @@ patch:
       - {label: '月', click: 'b', long_click: 'B', label_symbol: 'B'} 
       - {label: '弓', click: 'n', long_click: 'N', label_symbol: 'N'} 
       - {label: '一', click: 'm', long_click: 'M', label_symbol: 'M'} 
-      - {label: '⌫', click: BackSpace, width: 15, key_text_offset_y: -1, key_text_size: 18, key_back_color: 0x555a676e}
+      - {label: '⌫', click: BackSpace, width: 15, key_text_offset_y: -1, key_text_size: 18, symbol_text_size: 12, key_back_color: 0x555a676e}
       - {long_click: Keyboard_number, click: Keyboard_symbols, , width: 15, symbol_text_size: 12, key_back_color: 0x855a676e} #
       - {long_click: 'liquid_keyboard_emoji', click: ',', symbol_text_size: 12, key_back_color: 0x555a676e}
       - {label: '中', long_click: 'liquid_keyboard_candidate', click: space, width: 25, symbol_text_size: 12}
