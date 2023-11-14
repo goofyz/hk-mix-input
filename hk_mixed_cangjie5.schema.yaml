@@ -21,7 +21,7 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 倉頡, 英文 ]
+    states: [ 倉頡, 🔤 ]
   - name: full_shape
     states: [ 半角, 全角 ]
 #  - name: simplification
@@ -58,11 +58,10 @@ engine:
     - simplifier@emoji_suggestion
     - simplifier
     - uniquifier
-    - single_char_filter
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " ;"
+  delimiter: " /"
   #max_code_length: 5  # 五碼頂字上屏
 
 easy_en:
@@ -84,7 +83,6 @@ translator:
   enable_encoder: true
   encode_commit_history: true
   enable_user_dict: true
-  max_phrase_length: 8
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
     - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
@@ -108,13 +106,15 @@ simplifier:
 
 punctuator:
   import_preset: symbols
+  half_shape:
+    '/' : [ '/',、, ､,  ／, ÷ ]
 
 key_binder:
-  import_preset: default
 
 recognizer:
   import_preset: default
   patterns:
+    email: ''
     punct: "^/([0-9]0?|[a-z]+)$"
     reverse_lookup: "`[a-z]*'?$|[a-z]*'$"
     uppercase: ''
