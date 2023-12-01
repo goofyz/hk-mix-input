@@ -23,7 +23,7 @@ patch:
   "liquid_keyboard/single_width": 50
   "liquid_keyboard/candidate/name": "候選"
   "liquid_keyboard/emoji_1":
-    name: ️😀️
+    name: 😀
     type: SINGLE
     keys:
       - 😀
@@ -1967,7 +1967,7 @@ patch:
     - yanwenzi
     - exit
   "preset_keys/liquid_keyboard_candidate": { label: 候選字, send: function, command: liquid_keyboard, option: "候選" }
-  "preset_keys/liquid_keyboard_emoji": { label: 😀, send: function, command: liquid_keyboard, option: "😀" }
+  "preset_keys/liquid_keyboard_emoji": { label: 😀, send: function, command: liquid_keyboard, option: 😀 }
   "preset_keys/BackSpace": {label: '⌫', repeatable: true, send: BackSpace}
   "preset_keys/space": {label: '　', repeatable: false, functional: false, send: space}
   "preset_keys/Shift_L": {label: '⇧', send: Shift_L, shift_lock: ascii_long}
