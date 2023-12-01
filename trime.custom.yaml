@@ -2042,7 +2042,7 @@ patch:
       - {label: '十', click: 'j', long_click: 'J', label_symbol: 'J'} 
       - {label: '大', click: 'k', long_click: 'K', label_symbol: 'K'} 
       - {label: '中', click: 'l', long_click: 'L', label_symbol: 'L'} 
-      - {width: 5, click: '/', key_back_color: 0x555a676e}  #
+      - {width: 5, click: ';', key_back_color: 0x555a676e}  #
       - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1, key_text_size: 18, key_back_color: 0x555a676e}
       - {label: 'Z', long_click: 'Z', label_symbol: 'Z', click: z}
       - {label: '難', click: 'x', long_click: 'X', label_symbol: 'X'} 

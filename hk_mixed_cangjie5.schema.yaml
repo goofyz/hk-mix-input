@@ -61,8 +61,7 @@ engine:
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " /"
-  #max_code_length: 5  # 五碼頂字上屏
+  delimiter: " ;"
 
 easy_en:
   dictionary: easy_en
