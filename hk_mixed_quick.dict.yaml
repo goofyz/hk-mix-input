@@ -20,28 +20,11 @@ encoder:
   exclude_patterns:
     - '^x.*$'
     - '^z.*$'
-  rules:
-    - length_equal: 1
-      formula: "AaAz"
-    - length_equal: 2
-      formula: "AaAzBaBz"
-    - length_equal: 3
-      formula: "AaAzBaBzZaZz"
-    - length_equal: 4
-      formula: "AaAzBaBzCaCzZaZz"
-    - length_equal: 5
-      formula: "AaAzBaBzCaCzYaYzZaZz"
-    - length_equal: 6
-      formula: "AaAzBaBzCaCzDaDzYaYzZaZz"
-    - length_equal: 7
-      formula: "AaAzBaBzCaCzDaDzEaEzYaYzZaZz"
-    - length_equal: 8
-      formula: "AaAzBaBzCaCzDaDzEaEzFaFzYaYzZaZz"
 import_tables:
-  - quick
-  - hk_mixed_input.custom
-  - jyut6ping3.phrase
-  - jyut6ping3.maps
-  - jyut6ping3.words
-  - jyut6ping3.lettered
+  - dicts/simplex
+  - dicts/hk_mixed_input.custom
+  # - dicts/jyut6ping3.phrase
+  - dicts/jyut6ping3.maps
+  - dicts/jyut6ping3.words
+  - dicts/jyut6ping3.lettered
 ...

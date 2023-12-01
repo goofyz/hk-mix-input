@@ -38,11 +38,11 @@ encoder:
     - length_equal: 8
       formula: "AaAbAcAyAzBaBbBcByBzCaCbCcCyCzDaDbDcDyDzEaEbEcEyEzFaFbFcFyFzYaYbYcYyYzZaZbZcZyZz"
 import_tables:
-  - cangjie5
-  - cangjie5.cj3ext
-  - hk_mixed_input.custom
-  - jyut6ping3.phrase
-  - jyut6ping3.maps
-  - jyut6ping3.words
-  - jyut6ping3.lettered
+  - dicts/cangjie5
+  - dicts/cangjie5.cj3ext
+  - dicts/hk_mixed_input.custom
+  # - dicts/jyut6ping3.phrase
+  - dicts/jyut6ping3.maps
+  - dicts/jyut6ping3.words
+  - dicts/jyut6ping3.lettered
 ...
