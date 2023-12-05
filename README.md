@@ -1,17 +1,11 @@
 
 # 簡介
 
-本 project 嘗試便用 Trime 重現港式中英混合輸入鍵盤。而家仲係好初步既階段，暫只支援倉頡。
-
-# TODO 
-
-- [ ] Fix Emoji Keyboard
-- [X] 速成 （可成功，不過候選詞次序有問題）
-- [ ] 英文反查
+本 project 嘗試便用 Trime 重現港式中英混合輸入鍵盤。
 
 # 安裝步驟
 
-1. 安裝 [Trime 3.2.8](https://github.com/osfans/trime/releases) (~~新的應該也可以~~，未試)
+1. 安裝 [Trime 3.2.16](https://github.com/osfans/trime/releases) (舊的不行啊)
 2. 開啟「同文輸入法」，允許所有權限
 3. 到「同文輸入法」 > 「鍵盤設定」> 「嵌入式編輯模式」> 揀 「輸入碼」，這樣打字時 default 會出英文。
 3. 下載此 repo 中的[所有檔案](https://github.com/goofyz/hk-mix-input/archive/refs/heads/main.zip)，Copy 到 `內置儲存空間/rime` 入面。
@@ -25,10 +19,12 @@ PS2: 建議安裝 apk 後先開啟「同文輸入法」作設定。如未做第�
 # 修改 Tips
 
 - 基本上只需要改  `trime.custom.yaml` 和 `hk_mixed_cangjie5.custom.yaml`/`hk_mixed_quick.custom.yaml`
+    - `trime.custom.yaml`: 修改外觀顏色和鍵盤設定
+    - `hk_mixed_cangjie5.custom.yaml`/`hk_mixed_quick.custom.yaml`: 輸入法運作
 - 請參考 [Trime Wiki](https://github.com/osfans/trime/wiki/trime.yaml) 和 [Rime Customization Guide](https://github.com/rime/home/wiki/CustomizationGuide)
 - 修改 `trime.custom.yaml` 後，記得到「同文輸入法」>「主題與配色」>「主題」>  「Trime」> 「確定」一次，以 apply 你的修改。
 - 修改 `hk_mixed_cangjie5.custom.yaml`/`hk_mixed_quick.custom.yaml` (輸入法)後，要按「部署」。
-- 如果修改好似無反應，請到 `/rime/build` 下查看有沒有你新的改動。
+- 如果修改又 deploy 後，沒有反應，請到 `/rime/build` 下查看有沒有你新的改動。
 - 有新詞語可新增到 `hk_mixed_input.custom.dict.yaml` ，注意字語和字碼之間是 tab 非 space。
 
 # 常見問題
