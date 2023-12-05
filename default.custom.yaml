@@ -8,7 +8,7 @@ patch:
   schema_list:
     - {schema: hk_mixed_cangjie5}
   menu:
-    page_size: 20
+    page_size: 30
     ascii_composer/switch_key:
       Caps_Lock: commit_code
       Shift_L: commit_code
