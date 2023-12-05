@@ -16,7 +16,7 @@ schema:
     港式中英混合輸入(倉頡)
     網址：https://github.com/goofyz/hk-mix-input
   dependencies:
-    - easy_en
+    - melt_eng
     - quick
 
 switches:
@@ -54,7 +54,7 @@ engine:
   translators:
     - punct_translator
     - table_translator
-    - table_translator@easy_en
+    - table_translator@melt_eng
     - reverse_lookup_translator
   filters:
     - simplifier@emoji_suggestion
@@ -65,12 +65,12 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " ;"
 
-easy_en:
-  dictionary: easy_en
+
+melt_eng:
+  dictionary: melt_eng
   spelling_hints: 9
   enable_completion: true
   enable_sentence: false
-  initial_quality: -1
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
     - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
