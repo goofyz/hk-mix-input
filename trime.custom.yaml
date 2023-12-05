@@ -1958,7 +1958,7 @@ patch:
     - list
     - ids
     - table
-    - symbol
+    - symbollist
     - unit
     - grease
     - rusa
