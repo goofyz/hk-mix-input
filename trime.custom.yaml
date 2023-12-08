@@ -17,8 +17,14 @@ patch:
   "style/layout/spacing": 0
   "style/layout/round_corner": 0
   "style/layout/elevation": 0
+  "style/layout/movable": false
   "style/window/@0": {start: "", move: ' ', end: ""}
   "style/liquid_keyboard_window": []
+  "style/round_corner": 16
+  "style/key_height": 30
+  "style/keyboard_height": 260 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
+  "style/horizontal_gap": 4
+  "style/vertical_gap": 6
   "liquid_keyboard/row": 6
   "liquid_keyboard/single_width": 50
   "liquid_keyboard/candidate/name": "候選"
