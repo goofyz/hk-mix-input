@@ -1964,13 +1964,14 @@ patch:
     - list
     - ids
     - table
-    - symbollist
+    - symbol
     - unit
     - grease
     - rusa
     - lation
     - yinbiao
     - yanwenzi
+    - symbollist
     - exit
   "preset_keys/liquid_keyboard_candidate": { label: 候選字, send: function, command: liquid_keyboard, option: "候選" }
   "preset_keys/liquid_keyboard_emoji": { label: 😀, send: function, command: liquid_keyboard, option: 😀 }
