@@ -2040,19 +2040,19 @@ patch:
     - {click: 'KP_4', width: 24, key_text_size: 32}
     - {click: 'KP_5', width: 24, key_text_size: 32}
     - {click: 'KP_6', width: 24, key_text_size: 32}
-    - {click: space}
+    - {click: space, label: Space}
     - {click: '*', key_text_size: 20}
     - {click: 'KP_7', width: 24, key_text_size: 32}
     - {click: 'KP_8', width: 24, key_text_size: 32}
     - {click: 'KP_9', width: 24, key_text_size: 32}
-    - {click: BackSpace, key_text_size: 20}
+    - {click: BackSpace, key_text_size: 20, key_back_color: fnct_key_back_color}
     - {click: '/', key_text_size: 20}
-    - {click: Keyboard_default, long_click: Keyboard_symbols, key_text_offset_y: 4, key_symbol_offset_y: 4, width: 12}
+    - {click: Keyboard_default, long_click: Keyboard_symbols, key_text_offset_y: 4, key_symbol_offset_y: 4, width: 12, key_back_color: fnct_key_back_color}
     - {click: ',', width: 12}
     - {click: 'KP_0', width: 24, key_text_size: 32}
     - {click: '=', width: 12, key_text_size: 20}
     - {click: '.', width: 12, key_text_size: 20}
-    - {click: Return}
+    - {click: Return, key_back_color: action_key_back_color}
   "preset_keyboards/+":
     hk_mixed_cangjie5:
       name: 中英混合鍵盤
