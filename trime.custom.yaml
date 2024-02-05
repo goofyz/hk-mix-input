@@ -23,6 +23,7 @@ patch:
   "style/key_height": 30
   "style/keyboard_height": 260 #锁定键盘高度，避免切换时键盘高度变化而造成闪
   "style/keyboard_height_land": 180 #锁定横屏下键盘高度，避免切换时键盘高度变化而造成闪烁烁
+  "style/keyboard_padding_land": 0
   "style/horizontal_gap": 4
   "style/vertical_gap": 6
   "liquid_keyboard/row": 6
@@ -2003,7 +2004,7 @@ patch:
     hilited_text_color: 0xff000000 #標明編碼
     key_back_color: 0xffffff #按鍵背景
     #key_border_color: 0xeceff1 #按鍵邊框
-    key_symbol_color: 0x5e5e5e #按鍵符號
+    key_symbol_color: 0x8a8a8a #按鍵符號
     key_text_color: 0x1d1d1d #按鍵文字
     keyboard_back_color: 0xe1e1e1 #鍵盤背景
     label_color: 0xff3266a0 #標籤
@@ -2033,7 +2034,7 @@ patch:
     hilited_candidate_text_color: 0xdaf692
     hilited_candidate_back_color: 0x333333
     key_back_color: 0xcc151515 #按鍵背景
-    comment_text_color: 0xff6c60
+    comment_text_color: 0xbbff6c60
     fnct_key_back_color: 0x000000 #Function key (shift, symbol, number)
     fnct_text_color: 0xffffffff # Function key text color
     action_key_back_color: 0x0089D6 # Action key (Enter, Search)
@@ -2060,13 +2061,67 @@ patch:
     - {click: 'KP_8', width: 24, key_text_size: 32}
     - {click: 'KP_9', width: 24, key_text_size: 32}
     - {click: BackSpace, key_text_size: 20, key_back_color: fnct_key_back_color}
-    - {click: '/', key_text_size: 20}
-    - {click: Keyboard_default, long_click: Keyboard_symbols, key_text_offset_y: 4, key_symbol_offset_y: 4, width: 12, key_back_color: fnct_key_back_color}
-    - {click: ',', width: 12}
+    - {click: Keyboard_default, long_click: Keyboard_symbols, key_text_offset_y: 4, key_symbol_offset_y: 4, key_back_color: fnct_key_back_color}
+    - {click: '/', width: 12, key_text_size: 20}
+    - {click: ',', width: 12, key_text_size: 20}
     - {click: 'KP_0', width: 24, key_text_size: 32}
     - {click: '=', width: 12, key_text_size: 20}
     - {click: '.', width: 12, key_text_size: 20}
     - {click: Return, key_back_color: action_key_back_color}
+  "preset_keyboards/symbols":
+    name: 符號
+    author: "Goofyz"
+    ascii_mode: 1
+    width: 10
+    height: 44
+    symbol_text_size: 12
+    keys:
+    - {click: '1'}
+    - {click: '2'}
+    - {click: '3'}
+    - {click: '4'}
+    - {click: '5'}
+    - {click: '6'}
+    - {click: '7'}
+    - {click: '8'}
+    - {click: '9'}
+    - {click: '0'} #
+    - {click: '@'}
+    - {click: '#'}
+    - {click: '$'}
+    - {click: '%'}
+    - {click: '_'}
+    - {click: '&'}
+    - {click: '-'}
+    - {click: '+'}
+    - {click: '*'}
+    - {click: '/'} 
+    - {click: '~'}
+    - {click: '`'}
+    - {click: '='}
+    - {click: '"'}
+    - {click: "'"}
+    - {click: '(){Left}', label: '( )'}
+    - {click: '{}{Left}', label: '{ }'}
+    - {click: '[]{Left}', label: '[ ]'}
+    - {click: '「」{Left}'}
+    - {click: '《》{Left}'}
+    - {click: '<>{Left}'}  #
+    - {click: '\'}
+    - {click: '|'}
+    - {click: '^'}
+    - {click: ':'}
+    - {click: ';'} 
+    - {click: '!'}
+    - {click: '?'}
+    - {click: BackSpace, long_click: Clear, width: 20, key_text_offset_y: -1, key_text_size: 18, key_back_color: fnct_key_back_color}
+    - {click: Keyboard_default, width: 15, key_back_color: action_key_back_color}
+    - {click: Keyboard_number, key_back_color: fnct_key_back_color}
+    - {click: ','}
+    - {click: space, width: 30}
+    - {click: '.'}
+    - {click: liquid_keyboard_switch, key_back_color: fnct_key_back_color}
+    - {click: Return, long_click: select_all, width: 15, key_back_color: action_key_back_color}
   "preset_keyboards/+":
     hk_mixed_cangjie5:
       name: 中英混合鍵盤
@@ -2108,8 +2163,8 @@ patch:
       - {label: '十', click: 'j', long_click: 'J', label_symbol: 'J'} 
       - {label: '大', click: 'k', long_click: 'K', label_symbol: 'K'} 
       - {label: '中', click: 'l', long_click: 'L', label_symbol: 'L'} 
-      - {width: 5, click: ';', key_back_color: fnct_key_back_color}  #
-      - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1, key_text_size: 18, key_back_color: fnct_key_back_color, key_text_color: fnct_key_text_color}
+      - {width: 5, click: ';', key_back_color: fnct_key_back_color}  
+      - {label: '⇧', click: Shift_L, send_bindings: false, width: 15, key_text_offset_y: -1, key_text_size: 18, key_back_color: fnct_key_back_color, key_text_color: fnct_key_text_color} #
       - {label: 'Z', long_click: 'Z', label_symbol: 'Z', click: z}
       - {label: '難', click: 'x', long_click: 'X', label_symbol: 'X'} 
       - {label: '金', click: 'c', long_click: 'C', label_symbol: 'C'} 
